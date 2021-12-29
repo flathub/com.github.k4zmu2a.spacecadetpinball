@@ -1,21 +1,21 @@
 app-id: com.github.k4zmu2a.spacecadetpinball
 runtime: org.freedesktop.Platform
-runtime-version: "21.08"
+runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
 command: SpaceCadetPinball
 rename-appdata-file: SpaceCadetPinball.metainfo.xml
 rename-desktop-file: SpaceCadetPinball.desktop
 finish-args:
-  - "--socket=pulseaudio"
-  - "--socket=wayland"
-  - "--socket=fallback-x11"
-  - "--device=dri"
-  - "--env=SDL_SOUNDFONTS=/app/share/soundfonts/default-GM.sf3"
+  - --socket=pulseaudio
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=dri
+  - --env=SDL_SOUNDFONTS=/app/share/soundfonts/default-GM.sf3
   #- "--env=SDL_VIDEODRIVER=wayland"
 modules:
   - name: SDL2
     config-opts:
-    - '--disable-static'
+      - --disable-static
     buildsystem: autotools
     cleanup:
       - /bin
@@ -44,7 +44,7 @@ modules:
   - name: SDL2_mixer
     buildsystem: autotools
     config-opts:
-    - '--disable-static'
+      - --disable-static
     cleanup:
       - /bin
       - /include
@@ -69,9 +69,10 @@ modules:
     buildsystem: cmake-ninja
     no-make-install: true
     config-opts:
-      - "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     post-install:
-      - cat assets_list | while read line; do ln -s ${FLATPAK_DEST}/extra/Pinball/$line ${FLATPAK_DEST}/bin/; done
+      - cat assets_list | while read line; do ln -s ${FLATPAK_DEST}/extra/Pinball/$line
+        ${FLATPAK_DEST}/bin/; done
       - install -Dm755 apply_extra ${FLATPAK_DEST}/bin/apply_extra
       - install -Dm755 bin/SpaceCadetPinball -t ${FLATPAK_DEST}/bin/
       - install -Dm644 Platform/Linux/SpaceCadetPinball.desktop -t ${FLATPAK_DEST}/share/applications/
@@ -87,7 +88,7 @@ modules:
       - type: git
         url: https://github.com/k4zmu2a/SpaceCadetPinball
         branch: master
-        commit: 5ffbab8208b1b341e49199761267ed67ccad6c62
+        commit: 9acd3dbc9b3caac072dfc970ea8722a2214449d7
       - type: file
         path: assets_list
       - type: extra-data
