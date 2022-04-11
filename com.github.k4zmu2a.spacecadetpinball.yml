@@ -88,7 +88,7 @@ modules:
       - type: git
         url: https://github.com/k4zmu2a/SpaceCadetPinball
         branch: master
-        commit: 8f34829b1e4756472ce6889f31eb875ce343fb05
+        commit: cc06d35bc7cc775481c8985131871c3ce2e64989
       - type: file
         path: assets_list
       - type: extra-data
