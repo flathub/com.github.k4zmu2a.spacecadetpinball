@@ -25,6 +25,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL
+        commit: b424665e0899769b200231ba943353a5fee1b6b6
         tag: release-2.0.20
     modules:
       - name: libdecor
@@ -37,7 +38,7 @@ modules:
         sources:
           - type: git
             url: https://gitlab.gnome.org/jadahl/libdecor/
-            commit: 099b44e8806004c7818d41bc060e871743313680
+            commit: a382710b47de8a12857cf2468b391c3428d78323
 
   - shared-modules/linux-audio/fluidsynth2.json
 
@@ -53,7 +54,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL_mixer
-        commit: 2d1d969292861558ad3baba15a6ef869d875ec5b
+        commit: 8805ff399078718834d303ddafed6990c23ceaa8 # 2d1d969292861558ad3baba15a6ef869d875ec5b
 
   - name: FluidR3Mono
     buildsystem: simple
@@ -87,7 +88,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/k4zmu2a/SpaceCadetPinball
-        commit: cc06d35bc7cc775481c8985131871c3ce2e64989
+        commit: cfe26918923934e219d3644ac44f82926bcb259d
       - type: file
         path: assets_list
       - type: extra-data
