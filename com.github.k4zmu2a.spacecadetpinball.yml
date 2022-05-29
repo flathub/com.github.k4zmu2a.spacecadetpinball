@@ -25,7 +25,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL
-        tag: release-2.0.20
+        tag: release-2.0.22
     modules:
       - name: libdecor
         config-opts:
