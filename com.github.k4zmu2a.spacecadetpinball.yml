@@ -37,8 +37,8 @@ modules:
           - /lib/pkgconfig
         sources:
           - type: git
-            url: https://gitlab.gnome.org/jadahl/libdecor/
-            commit: a382710b47de8a12857cf2468b391c3428d78323
+            url: https://gitlab.gnome.org/christian-rauch/libdecor/
+            commit: de9534d2633b2510d4869ab62505f94d63420b71
 
   - shared-modules/linux-audio/fluidsynth2.json
 
@@ -54,7 +54,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL_mixer
-        commit: 8805ff399078718834d303ddafed6990c23ceaa8 # 2d1d969292861558ad3baba15a6ef869d875ec5b
+        commit: 1daa96a48204569fcd1a07a768cf2dd92bc596d9 # 2d1d969292861558ad3baba15a6ef869d875ec5b
 
   - name: FluidR3Mono
     buildsystem: simple
@@ -88,7 +88,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/k4zmu2a/SpaceCadetPinball
-        commit: cfe26918923934e219d3644ac44f82926bcb259d
+        commit: 8017734de40523e9f1a5689fbb9de5a0eefde5d2
       - type: file
         path: assets_list
       - type: extra-data
