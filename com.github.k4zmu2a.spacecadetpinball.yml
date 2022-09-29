@@ -1,6 +1,6 @@
 app-id: com.github.k4zmu2a.spacecadetpinball
 runtime: org.freedesktop.Platform
-runtime-version: "21.08"
+runtime-version: "22.08"
 sdk: org.freedesktop.Sdk
 command: SpaceCadetPinball
 rename-appdata-file: SpaceCadetPinball.metainfo.xml
