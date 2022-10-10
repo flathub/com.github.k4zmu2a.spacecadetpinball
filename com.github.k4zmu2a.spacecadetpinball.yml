@@ -9,6 +9,7 @@ finish-args:
   - --socket=pulseaudio
   - --socket=wayland
   - --socket=fallback-x11
+  - --share=ipc
   - --device=dri
   - --env=SDL_SOUNDFONTS=/app/share/soundfonts/default-GM.sf3
 modules:
