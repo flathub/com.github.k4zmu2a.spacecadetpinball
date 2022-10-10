@@ -24,8 +24,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL
-        commit: 8c9beb0c873f6ca5efbd88f1ad2648bfc793b2ac
-        tag: release-2.24.0
+        commit: a1d1946dcba6509f0679f507b57e7b228d32e6f8
+        tag: release-2.24.1
     modules:
       - name: libdecor
         config-opts:
@@ -53,8 +53,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL_mixer
-        tag: release-2.6.2
-        commit: 75f318100d220e236c4fcc5a3d0c9ba33d064f3f
+        #tag: release-2.6.2
+        commit: dddb1011d1020a0e252929c841464f4dbb966364
 
   - name: FluidR3Mono
     buildsystem: simple
