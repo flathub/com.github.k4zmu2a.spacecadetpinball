@@ -1,6 +1,6 @@
 app-id: com.github.k4zmu2a.spacecadetpinball
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: "21.08"
 sdk: org.freedesktop.Sdk
 command: SpaceCadetPinball
 rename-appdata-file: SpaceCadetPinball.metainfo.xml
@@ -11,7 +11,6 @@ finish-args:
   - --socket=fallback-x11
   - --device=dri
   - --env=SDL_SOUNDFONTS=/app/share/soundfonts/default-GM.sf3
-  #- "--env=SDL_VIDEODRIVER=wayland"
 modules:
   - name: SDL2
     config-opts:
@@ -25,8 +24,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL
-        commit: b424665e0899769b200231ba943353a5fee1b6b6
-        tag: release-2.0.20
+        commit: 8c9beb0c873f6ca5efbd88f1ad2648bfc793b2ac
+        tag: release-2.24.0
     modules:
       - name: libdecor
         config-opts:
@@ -54,7 +53,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL_mixer
-        commit: 1daa96a48204569fcd1a07a768cf2dd92bc596d9 # 2d1d969292861558ad3baba15a6ef869d875ec5b
+        tag: release-2.6.2
+        commit: 75f318100d220e236c4fcc5a3d0c9ba33d064f3f
 
   - name: FluidR3Mono
     buildsystem: simple
@@ -88,7 +88,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/k4zmu2a/SpaceCadetPinball
-        commit: 8017734de40523e9f1a5689fbb9de5a0eefde5d2
+        commit: e7ddebd16c272bc8a0ee12077ec82120f30d45a0
       - type: file
         path: assets_list
       - type: extra-data
