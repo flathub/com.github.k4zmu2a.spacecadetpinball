@@ -1,6 +1,6 @@
 app-id: com.github.k4zmu2a.spacecadetpinball
 runtime: org.freedesktop.Platform
-runtime-version: "21.08"
+runtime-version: "22.08"
 sdk: org.freedesktop.Sdk
 command: SpaceCadetPinball
 rename-appdata-file: SpaceCadetPinball.metainfo.xml
@@ -9,6 +9,7 @@ finish-args:
   - --socket=pulseaudio
   - --socket=wayland
   - --socket=fallback-x11
+  - --share=ipc
   - --device=dri
   - --env=SDL_SOUNDFONTS=/app/share/soundfonts/default-GM.sf3
 modules:
@@ -24,8 +25,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL
-        commit: 8c9beb0c873f6ca5efbd88f1ad2648bfc793b2ac
-        tag: release-2.24.0
+        commit: 55b03c7493a7abed33cf803d1380a40fa8af903f
+        tag: release-2.24.2
     modules:
       - name: libdecor
         config-opts:
@@ -37,7 +38,8 @@ modules:
         sources:
           - type: git
             url: https://gitlab.gnome.org/jadahl/libdecor/
-            commit: 8b42120d2b144bb9b5b62212d74d93ee23c82395
+            commit: 4db201134ab51950a1c673d77d7c4f2f7c7b48fd
+            tag: 0.1.1
 
   - shared-modules/linux-audio/fluidsynth2.json
 
@@ -53,8 +55,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL_mixer
-        tag: release-2.6.2
-        commit: 75f318100d220e236c4fcc5a3d0c9ba33d064f3f
+        #tag: release-2.6.2
+        commit: 16da3599be2346689a66d12f85851f3f80793f14
 
   - name: FluidR3Mono
     buildsystem: simple
@@ -88,7 +90,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/k4zmu2a/SpaceCadetPinball
-        commit: e7ddebd16c272bc8a0ee12077ec82120f30d45a0
+        commit: 3c6e1c9d47445d0f27cf2044dd02b095b5bbba5d
       - type: file
         path: assets_list
       - type: extra-data
