@@ -25,19 +25,23 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL
-        commit: 55b03c7493a7abed33cf803d1380a40fa8af903f
-        tag: release-2.24.2
+        commit: f17058b562c8a1090c0c996b42982721ace90903
+        tag: release-2.26.1
     modules:
       - name: libdecor
+        build-options:
+          env:
+            LIBDECOR_PLUGIN_DIR: build/src/plugins/cairo/
         config-opts:
-          - -Ddemo=false
+          - -Dinstall_demo=false
+          - --buildtype=release
         buildsystem: meson
         cleanup:
           - /include
           - /lib/pkgconfig
         sources:
           - type: git
-            url: https://gitlab.gnome.org/jadahl/libdecor/
+            url: https://gitlab.freedesktop.org/libdecor/libdecor
             commit: 4db201134ab51950a1c673d77d7c4f2f7c7b48fd
             tag: 0.1.1
 
@@ -56,7 +60,7 @@ modules:
       - type: git
         url: https://github.com/libsdl-org/SDL_mixer
         #tag: release-2.6.2
-        commit: 16da3599be2346689a66d12f85851f3f80793f14
+        commit: f496c8c2c2263ee17e9dc9223861cf53f8d24469
 
   - name: FluidR3Mono
     buildsystem: simple
@@ -90,7 +94,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/k4zmu2a/SpaceCadetPinball
-        commit: 3c6e1c9d47445d0f27cf2044dd02b095b5bbba5d
+        commit: 2162cac9771bb50059f440c50e9a30d982cdd848
       - type: file
         path: assets_list
       - type: extra-data
