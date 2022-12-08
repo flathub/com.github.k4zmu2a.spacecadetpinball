@@ -27,6 +27,10 @@ modules:
         url: https://github.com/libsdl-org/SDL
         commit: f17058b562c8a1090c0c996b42982721ace90903
         tag: release-2.26.1
+        x-checker-data:
+          type: git
+          tag-pattern: ^release-(\d+.\d+.\d+)$
+
     modules:
       - name: libdecor
         build-options:
@@ -44,6 +48,9 @@ modules:
             url: https://gitlab.freedesktop.org/libdecor/libdecor
             commit: 4db201134ab51950a1c673d77d7c4f2f7c7b48fd
             tag: 0.1.1
+            x-checker-data:
+              type: git
+              tag-pattern: ^(\d+.\d+.\d+)$
 
   - shared-modules/linux-audio/fluidsynth2.json
 
