@@ -13,33 +13,9 @@ finish-args:
   - --device=dri
   - --env=SDL_SOUNDFONTS=/app/share/soundfonts/default-GM.sf3
 modules:
-  - name: SDL2
-    config-opts:
-      - --disable-static
-    buildsystem: autotools
-    cleanup:
-      - /bin
-      - /include
-      - /lib/pkgconfig
-      - /share
-    sources:
-      - type: git
-        url: https://github.com/libsdl-org/SDL
-        commit: 55b03c7493a7abed33cf803d1380a40fa8af903f
-        tag: release-2.24.2
-    modules:
-      - name: libdecor
-        config-opts:
-          - -Ddemo=false
-        buildsystem: meson
-        cleanup:
-          - /include
-          - /lib/pkgconfig
-        sources:
-          - type: git
-            url: https://gitlab.gnome.org/jadahl/libdecor/
-            commit: 4db201134ab51950a1c673d77d7c4f2f7c7b48fd
-            tag: 0.1.1
+  - shared-modules/libdecor/libdecor-0.1.1.json
+  
+  - shared-modules/SDL2/SDL2-2.26.1.json
 
   - shared-modules/linux-audio/fluidsynth2.json
 
