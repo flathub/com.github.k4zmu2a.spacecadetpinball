@@ -13,10 +13,7 @@ finish-args:
   - --device=dri
   - --env=SDL_SOUNDFONTS=/app/share/soundfonts/default-GM.sf3
 modules:
-  - shared-modules/libdecor/libdecor-0.1.1.json
-  
-  - shared-modules/SDL2/SDL2-2.26.1.json
-
+  - shared-modules/SDL2/SDL2-2.26.1-with-libdecor.json
   - shared-modules/linux-audio/fluidsynth2.json
 
   - name: SDL2_mixer
