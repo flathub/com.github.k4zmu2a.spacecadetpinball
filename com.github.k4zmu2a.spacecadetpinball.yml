@@ -13,7 +13,7 @@ finish-args:
   - --device=dri
   - --env=SDL_SOUNDFONTS=/app/share/soundfonts/default-GM.sf3
 modules:
-  - shared-modules/SDL2/SDL2-2.26.1-with-libdecor.json
+  - shared-modules/SDL2/SDL2-with-libdecor.json
   - shared-modules/linux-audio/fluidsynth2.json
 
   - name: SDL2_mixer
@@ -29,7 +29,7 @@ modules:
       - type: git
         url: https://github.com/libsdl-org/SDL_mixer
         #tag: release-2.6.2
-        commit: f496c8c2c2263ee17e9dc9223861cf53f8d24469
+        commit: de7b2f4d2a7e78db363cb26a66df4da1f9524e25
 
   - name: FluidR3Mono
     buildsystem: simple
@@ -63,7 +63,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/k4zmu2a/SpaceCadetPinball
-        commit: 2162cac9771bb50059f440c50e9a30d982cdd848
+        commit: 10ff1143cc49268aca5e2537d3fc4bbc53a18d3c
       - type: file
         path: assets_list
       - type: extra-data
