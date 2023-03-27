@@ -26,10 +26,9 @@ modules:
       - /lib/pkgconfig
       - /share
     sources:
-      - type: git
-        url: https://github.com/libsdl-org/SDL_mixer
-        #tag: release-2.6.2
-        commit: de7b2f4d2a7e78db363cb26a66df4da1f9524e25
+      - type: archive
+        url: https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.6.3.zip
+        sha256: c2b62e51ddb20e813b9bcb5b37c5f44a9b9f3e1a1597817903ffccad4b01d972
 
   - name: FluidR3Mono
     buildsystem: simple
@@ -63,7 +62,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/k4zmu2a/SpaceCadetPinball
-        commit: 10ff1143cc49268aca5e2537d3fc4bbc53a18d3c
+        commit: e466bbacb8a8d490f2e3d1632a9ee4ba46b6daaf
       - type: file
         path: assets_list
       - type: extra-data
