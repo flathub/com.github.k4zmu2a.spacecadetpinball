@@ -1,6 +1,6 @@
 app-id: com.github.k4zmu2a.spacecadetpinball
 runtime: org.freedesktop.Platform
-runtime-version: "22.08"
+runtime-version: "23.08"
 sdk: org.freedesktop.Sdk
 command: SpaceCadetPinball
 rename-appdata-file: SpaceCadetPinball.metainfo.xml
@@ -26,9 +26,9 @@ modules:
       - /lib/pkgconfig
       - /share
     sources:
-      - type: archive
-        url: https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.6.3.zip
-        sha256: c2b62e51ddb20e813b9bcb5b37c5f44a9b9f3e1a1597817903ffccad4b01d972
+      - type: git
+        url: https://github.com/libsdl-org/SDL_mixer/
+        commit: d79638a1b6ff6563a82b57732ce05ca27cc54338
 
   - name: FluidR3Mono
     buildsystem: simple
@@ -62,7 +62,11 @@ modules:
     sources:
       - type: git
         url: https://github.com/k4zmu2a/SpaceCadetPinball
-        commit: e466bbacb8a8d490f2e3d1632a9ee4ba46b6daaf
+        tag: Release_2.1.0
+        commit: 6a30ccbef12c7b7781ccf89788d77461fa20a90a
+        x-checker-data:
+          type: git
+          tag-pattern: ^Release_(\d+.\d+.\d+)$
       - type: file
         path: assets_list
       - type: extra-data
