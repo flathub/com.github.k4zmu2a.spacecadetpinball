@@ -28,7 +28,11 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL_mixer/
-        commit: d79638a1b6ff6563a82b57732ce05ca27cc54338
+        tag: release-2.8.0
+        commit: a37e09f85d321a13dfcf0d4432827ee09beeb623
+        x-checker-data:
+          type: git
+          tag-pattern: ^release-(\d+.\d+.\d+)$
 
   - name: FluidR3Mono
     buildsystem: simple
