@@ -71,6 +71,8 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^Release_(\d+.\d+.\d+)$
+      - type: patch
+        path: 0001-Remove-deprecated-metainfo.patch
       - type: file
         path: assets_list
       - type: extra-data
