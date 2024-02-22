@@ -1,0 +1,25 @@
+From e910313b17aaba85619d1bc1dbfec37dca01845b Mon Sep 17 00:00:00 2001
+From: "Kowalski Dragon (kowalski7cc)" <kowalski7cc@users.noreply.github.com>
+Date: Sat, 17 Feb 2024 18:25:47 +0100
+Subject: [PATCH] Remove deprecated metainfo
+
+Signed-off-by: Kowalski Dragon (kowalski7cc) <kowalski7cc@users.noreply.github.com>
+---
+ Platform/Linux/SpaceCadetPinball.metainfo.xml | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/Platform/Linux/SpaceCadetPinball.metainfo.xml b/Platform/Linux/SpaceCadetPinball.metainfo.xml
+index 7fcdafd..76a2c91 100644
+--- a/Platform/Linux/SpaceCadetPinball.metainfo.xml
++++ b/Platform/Linux/SpaceCadetPinball.metainfo.xml
+@@ -2,7 +2,6 @@
+ <component type="desktop-application">
+     <id>com.github.k4zmu2a.spacecadetpinball</id>
+     <name>Space Cadet Pinball</name>
+-    <display_name>Space Cadet Pinball</display_name>
+     <summary>Game engine for Space Cadet Pinball</summary>
+     <url type="homepage">https://github.com/k4zmu2a/SpaceCadetPinball</url>
+     <url type="bugtracker">https://github.com/k4zmu2a/SpaceCadetPinball/issues</url>
+-- 
+2.43.1
+
