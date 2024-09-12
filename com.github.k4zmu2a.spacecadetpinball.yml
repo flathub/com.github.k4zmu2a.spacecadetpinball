@@ -1,6 +1,6 @@
 app-id: com.github.k4zmu2a.spacecadetpinball
 runtime: org.freedesktop.Platform
-runtime-version: "23.08"
+runtime-version: "24.08"
 sdk: org.freedesktop.Sdk
 command: SpaceCadetPinball
 rename-appdata-file: SpaceCadetPinball.metainfo.xml
@@ -13,7 +13,6 @@ finish-args:
   - --device=dri
   - --env=SDL_SOUNDFONTS=/app/share/soundfonts/default-GM.sf3
 modules:
-  - shared-modules/SDL2/SDL2-with-libdecor.json
   - shared-modules/linux-audio/fluidsynth2.json
 
   - name: SDL2_mixer
@@ -66,8 +65,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/k4zmu2a/SpaceCadetPinball
-        tag: Release_2.1.0
-        commit: 6a30ccbef12c7b7781ccf89788d77461fa20a90a
+        #tag: Release_2.1.0
+        commit: 52126feb40327345c64fd26adf310b9334b27913
         x-checker-data:
           type: git
           tag-pattern: ^Release_(\d+.\d+.\d+)$
