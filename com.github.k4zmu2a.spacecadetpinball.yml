@@ -1,6 +1,6 @@
 app-id: com.github.k4zmu2a.spacecadetpinball
 runtime: org.freedesktop.Platform
-runtime-version: "24.08"
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: SpaceCadetPinball
 rename-appdata-file: SpaceCadetPinball.metainfo.xml
@@ -66,10 +66,11 @@ modules:
       - type: git
         url: https://github.com/k4zmu2a/SpaceCadetPinball
         #tag: Release_2.1.0
-        commit: 52126feb40327345c64fd26adf310b9334b27913
+        commit: 6a30ccbef12c7b7781ccf89788d77461fa20a90a
         x-checker-data:
           type: git
           tag-pattern: ^Release_(\d+.\d+.\d+)$
+        tag: Release_2.1.0
       - type: patch
         path: 0001-Remove-deprecated-metainfo.patch
       - type: file
@@ -77,8 +78,8 @@ modules:
       - type: extra-data
         filename: pinball.zip
         url: https://archive.org/26/items/pinball_202007/Pinball.zip
-        sha256: 1078b6ec75a36b5585061d1ebdd3f27019d97c1ab7c5a4bb9f1159932aae3109
-        size: 1276182
+        sha256: 494b53f199b0f359efc93be62d0be2b2f5433b3e94af857c8e45d7a7aa0930b8
+        size: 4756
       - type: script
         dest-filename: apply_extra
         commands:
