@@ -76,7 +76,7 @@ modules:
         path: assets_list
       - type: extra-data
         filename: pinball.zip
-        url: https://archive.org/26/items/pinball_202007/Pinball.zip
+        url: https://archive.org/download/pinball_202007/Pinball.zip
         sha256: 1078b6ec75a36b5585061d1ebdd3f27019d97c1ab7c5a4bb9f1159932aae3109
         size: 1276182
       - type: script
