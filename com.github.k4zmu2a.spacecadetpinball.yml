@@ -65,12 +65,11 @@ modules:
     sources:
       - type: git
         url: https://github.com/k4zmu2a/SpaceCadetPinball
-        #tag: Release_2.1.0
-        commit: 6a30ccbef12c7b7781ccf89788d77461fa20a90a
-        x-checker-data:
-          type: git
-          tag-pattern: ^Release_(\d+.\d+.\d+)$
-        tag: Release_2.1.0
+        commit: cb9b7b886244a27773f66b0b19fdc2998392565e
+        # tag: Release_2.1.0
+        # x-checker-data:
+        #   type: git
+        #   tag-pattern: ^Release_(\d+.\d+.\d+)$
       - type: patch
         path: 0001-Remove-deprecated-metainfo.patch
       - type: file
