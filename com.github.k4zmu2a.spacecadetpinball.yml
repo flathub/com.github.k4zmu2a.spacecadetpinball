@@ -15,24 +15,6 @@ finish-args:
 modules:
   - shared-modules/linux-audio/fluidsynth2.json
 
-  - name: SDL2_mixer
-    buildsystem: autotools
-    config-opts:
-      - --disable-static
-    cleanup:
-      - /bin
-      - /include
-      - /lib/pkgconfig
-      - /share
-    sources:
-      - type: git
-        url: https://github.com/libsdl-org/SDL_mixer/
-        tag: release-2.8.1
-        commit: 171eb2d420d5643e4ee11514a06e04a41a463bbd
-        x-checker-data:
-          type: git
-          tag-pattern: ^release-(\d+.\d+.\d+)$
-
   - name: FluidR3Mono
     buildsystem: simple
     build-commands:
