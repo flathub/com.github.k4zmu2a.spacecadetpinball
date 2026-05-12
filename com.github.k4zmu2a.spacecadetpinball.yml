@@ -27,8 +27,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL_mixer/
-        tag: release-2.8.1
-        commit: 171eb2d420d5643e4ee11514a06e04a41a463bbd
+        tag: release-3.2.2
+        commit: a5e1890afc5115ffd16cefdbb4d50f74bf4970ce
         x-checker-data:
           type: git
           tag-pattern: ^release-(\d+.\d+.\d+)$
