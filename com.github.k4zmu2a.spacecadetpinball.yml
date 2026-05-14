@@ -13,8 +13,8 @@ finish-args:
   - --device=dri
   - --env=SDL_SOUNDFONTS=/app/share/soundfonts/default-GM.sf3
 modules:
-  # The fluidsynth2 and SDL2_mixer were required to play the MIDI files.
-  # The runtime provides the SDL2_mixer module without MIDI support. Therefore, we built it again.
+  # The FluidSynth2 and SDL2_mixer modules are required to play the MIDI files.
+  # Because the SDL2_mixer module provided by the runtime does not support the MIDI files, we built it from scratch.
   - shared-modules/linux-audio/fluidsynth2.json
   - name: SDL2_mixer
     buildsystem: autotools
